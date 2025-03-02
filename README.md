@@ -1,2 +1,2 @@
 # 🚀 Django Project
-Project
+Mempelajari Django f
