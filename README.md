@@ -1,6 +1,8 @@
 # 🚀 Django Project
+[![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=fff)](#)
+[![Django](https://img.shields.io/badge/Django-%23092E20.svg?logo=django&logoColor=white)](#)
 ## 🧑🏻‍💻 Description
-**Django** adalah sebuah framework full-stack untuk membuat aplikasi web dengan bahasa pemrograman Python. Framework akan membantu kita membuat web lebih cepat, dibandingkan menulis kode dari nol. **Full-stack** artinya, django meliputi sisi front-end dan juga back-end. Front-end adalah sisi depan yang akan dilihat oleh pengguna, sedangkan back-end adalah sisi belakang yang berhubungan dengan database dan logika bisnis.
+Project ini adalah perjalanan panjang saya mempelajari Django yang berisikan cara membuat sebuah framework jaringan website, yang digunakan untuk keberlangsungan website itu sendiri.
 ## 💻 Cara Kerja
 ## 💡 Fun Fact!
 Django digunakan untuk membuat website besar seperti Instagram, Spotify & Dropbox lho. 
