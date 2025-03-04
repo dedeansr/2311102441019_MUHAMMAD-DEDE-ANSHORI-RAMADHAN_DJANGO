@@ -4,6 +4,9 @@
 ## 🧑🏻‍💻 Description
 Project ini adalah perjalanan panjang saya mempelajari Django yang berisikan cara membuat sebuah framework jaringan website, yang digunakan untuk keberlangsungan website itu sendiri.
 ## 💻 How to run it!
+'''py
+a = 10
 
+'''
 ## 💡 Fun Fact!
 Django digunakan untuk membuat website besar seperti Instagram, Spotify & Dropbox lho. 
