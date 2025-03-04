@@ -3,6 +3,7 @@
 [![Django](https://img.shields.io/badge/Django-%23092E20.svg?logo=django&logoColor=white)](#)
 ## 🧑🏻‍💻 Description
 Project ini adalah perjalanan panjang saya mempelajari Django yang berisikan cara membuat sebuah framework jaringan website, yang digunakan untuk keberlangsungan website itu sendiri.
-## 💻 How it Works!
+## 💻 How to run it!
+
 ## 💡 Fun Fact!
 Django digunakan untuk membuat website besar seperti Instagram, Spotify & Dropbox lho. 
