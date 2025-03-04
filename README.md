@@ -4,7 +4,7 @@
 ## 🧑🏻‍💻 Description
 Project ini adalah perjalanan panjang saya mempelajari Django yang berisikan cara membuat sebuah framework jaringan website, yang digunakan untuk keberlangsungan website itu sendiri.
 ## 💻 How to run it!
-* `clone
+* Pertama lakukan cloning pada repository ini. Di Git Bash.
 ```bash
 git clone https://github.com/dedeansr/2311102441019_MUHAMMAD-DEDE-ANSHORI-RAMADHAN_DJANGO.git
 ```
