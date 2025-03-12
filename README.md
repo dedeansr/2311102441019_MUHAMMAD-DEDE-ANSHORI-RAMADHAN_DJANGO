@@ -1,7 +1,7 @@
 # 🚀 Django Project
 [![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=fff)](#)
 [![Django](https://img.shields.io/badge/Django-%23092E20.svg?logo=django&logoColor=white)](#)
-[!JavaScript](https://shields.io/badge/JavaScript-F7DF1E?logo=JavaScript&logoColor=000&style=flat-square)](#)
+[![JavaScript](https://shields.io/badge/JavaScript-F7DF1E?logo=JavaScript&logoColor=000&style=flat-square)](#)
 ## 🧑🏻‍💻 Description
 Project Website ini merupakan sebuah resume atau portfolio pribadi saya berisikan informasi diri saya.
 ## 💻 How to run it!
