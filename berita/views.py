@@ -71,7 +71,7 @@ def artikel_list(request):
     return render(request, template_name, context)
 
 def artikel_add(request):
-    template_name = "dashboard/snippets/artikel_add.html"
+    template_name = "dashboard/snippets/artikel_forms.html"
     if request.method == "POST":
         forms = ArtikelForm(request.POST, request.FILES)
         if forms.is_valid():
@@ -87,3 +87,36 @@ def artikel_add(request):
         'forms': forms
     }
     return render (request, template_name, context)
+
+def artikel_detail(request, id_artikel):
+    template_name = "dashboard/snippets/artikel_detail.html"
+    artikel = Artikel.objects.get(id=id_artikel)
+    context = {
+        'title': artikel.judul,
+        'artikel': artikel
+    }
+    return render (request, template_name, context)
+
+def artikel_update(request, id_artikel):
+    template_name = "dashboard/snippets/artikel_forms.html"
+    artikel = Artikel.objects.get(id=id_artikel)
+    if request.method == "POST":
+        forms = ArtikelForm(request.POST, request.FILES, instance=artikel)
+        if forms.is_valid():
+            pub = forms.save(commit=False)
+            pub.author = request.user
+            pub.save()
+            return redirect(artikel_list)
+
+    forms = ArtikelForm(instance=artikel)
+    context = {
+        'title': 'tambah artikel',
+        'forms': forms
+    }
+    return render (request, template_name, context)
+
+def artikel_delete(request, id_artikel):
+    try:
+        Artikel.objects.get(id=id_artikel).delete()
+    except:pass
+    return redirect(artikel_list)

@@ -3,7 +3,7 @@ from django.urls import path
 from berita.views import (
     dashboard,
     kategori_list, kategori_add, kategori_update, kategori_delete,
-    artikel_list, artikel_add
+    artikel_list, artikel_add, artikel_detail, artikel_update, artikel_delete
     )
 
 urlpatterns = [ 
@@ -16,5 +16,8 @@ urlpatterns = [
 
     path('artikel/list', artikel_list, name="artikel_list"),
     path('artikel/add', artikel_add, name="artikel_add"),
+    path('artikel/detail/<int:id_artikel>', artikel_detail, name="artikel_detail"),
+    path('artikel/update/<int:id_artikel>', artikel_update, name="artikel_update"),
+    path('artikel/delete/<int:id_artikel>', artikel_delete, name="artikel_delete"),
 
 ]
