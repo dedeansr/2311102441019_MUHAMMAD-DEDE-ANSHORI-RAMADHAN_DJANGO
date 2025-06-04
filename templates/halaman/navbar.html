@@ -1,41 +1,17 @@
 {% load static %}
-  <!-- Navbar Transparent -->
-  <nav class="navbar navbar-expand-lg position-absolute top-0 z-index-3 w-100 shadow-none my-3  navbar-transparent ">
+<nav class="navbar navbar-expand-lg position-absolute top-0 z-index-3 w-100 shadow-none my-3  navbar-transparent ">
     <div class="container">
+      <a class="navbar-brand text-white d-none d-md-block d-flex align-items-center" href="https://www.instagram.com/jayarayamobil.id/" rel="tooltip" title="Home to Jaya Raya Mobil" data-placement="bottom" target="_blank">
+        <img src="{% static '/halaman/assets/img/umkt.png' %}" alt="Logo" height="100" class="me-2">
+      </a>
       <div class="collapse navbar-collapse w-100 pt-3 pb-2 py-lg-0" id="navigation">
         <ul class="navbar-nav navbar-nav-hover ms-auto">
           <li class="nav-item dropdown dropdown-hover mx-2">
             <a class="nav-link ps-2 d-flex cursor-pointer align-items-center" role="button" id="dropdownMenuPages10" data-bs-toggle="dropdown" aria-expanded="false">
-              <i class="material-icons opacity-6 me-2 text-md">dashboard</i>
-              Dashboard
-            </a>
-          </li>
-          <li class="nav-item dropdown dropdown-hover mx-2">
-            <a class="nav-link ps-2 d-flex cursor-pointer align-items-center" role="button" id="dropdownMenuAccount" data-bs-toggle="dropdown" aria-expanded="false">
-              <i class="material-icons opacity-6 me-2 text-md">contacts</i>
-              Account
-            </a>
-          </li>
-          <li class="nav-item dropdown dropdown-hover mx-2">
-            <a class="nav-link ps-2 d-flex cursor-pointer align-items-center" role="button" id="dropdownMenuBlocks" data-bs-toggle="dropdown" aria-expanded="false">
-              <i class="material-icons opacity-6 me-2 text-md">view_day</i>
-              Sections
-            </a>
-          </li>
-          <li class="nav-item dropdown dropdown-hover mx-2">
-            <a class="nav-link ps-2 d-flex cursor-pointer align-items-center" role="button" id="dropdownMenuDocs" data-bs-toggle="dropdown" aria-expanded="false">
-              <i class="material-icons opacity-6 me-2 text-md">article</i>
-              Docs
-            </a>
-          </li>
-        </ul>
-        <ul class="navbar-nav d-lg-block d-none">
-          <li class="nav-item"> 
-            <a href="{% url 'dashboard' %}" class="btn btn-sm  bg-gradient-primary  mb-0 me-1">Dashboard</a>
+          <li class="nav-item">
+            <a href="{% url 'dashboard' %}" class="btn btn-sm  bg-gradient-primary  mb-0 me-1">Halaman Dashboard</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
-  <!-- End Navbar -->
-  <!-- End Navbar -->

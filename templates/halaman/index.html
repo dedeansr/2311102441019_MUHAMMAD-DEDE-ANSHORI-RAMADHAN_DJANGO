@@ -1,158 +1,595 @@
-{% extends 'halaman/base.html' %}
+<!--
+=========================================================
+* Material Kit 2 PRO - v3.0.0
+=========================================================
+
+* Product Page:  https://www.creative-tim.com/product/material-kit-pro 
+* Copyright 2021 Creative Tim (https://www.creative-tim.com)
+* Coded by www.creative-tim.com
+
+ =========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. -->
 {% load static %}
-{% block content %}
-<div class="container">
-  <div class="row">
-    <div class="col-lg-7">
-    </div>
-    <div class="col-12">
-      <section class="py-5">
-        <div class="container">
-          <div class="row">
-            <div class="col-8 mx-auto text-center mb-5">
-              <span class="badge badge-info mb-2">Living</span>
-              <h2>A new way to buy your next home</h2>
-              <p>
-                If you can’t decide, the answer is no. If two equally difficult paths,
-                choose the one more painful in the short term (pain avoidance
-                is creating an illusion of equality).
-              </p>
-            </div>
-          </div>
-          <div class="row mb-4">
-            <div class="col-lg-3 col-md-6 position-relative mb-sm-0 mb-3">
-              <hr class="vertical dark d-md-block d-none">
-              <h3 class="mb-3">
-                <a href="javascript:;" class="text-darker">
-                  Short Sentences Gives You the Liberty
-                </a>
-              </h3>
-              <p class="mb-3">
-                Paradoxically, using more short sentences gives you the liberty to write beautiful long sentences.
-              </p>
-              <p class="mb-3">
-                But in a way that&#39;s never been done before.
-              </p>
-              <div class="author">
-                <img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/assets/img/team-9.jpg" alt="..." class="avatar shadow border-radius-lg" loading="lazy">
-                <div class="name ps-3 my-auto">
-                  <p class="text-sm text-darker font-weight-bold mb-0">Mathew Glock</p>
-                  <div class="stats">
-                    <p class="text-xs text-secondary mb-0">Author</p>
-                  </div>
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="apple-touch-icon" sizes="76x76" href="static/halaman/assets/img/setan-merah.png">
+  <link rel="icon" type="image/png" href="static/halaman/assets/img/setan-merah.png">
+  <title>
+    {{ title }}
+  </title>
+  <!--     Fonts and icons     -->
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
+  <!-- Nucleo Icons -->
+  <link href="static/halaman/assets/css/nucleo-icons.css" rel="stylesheet" />
+  <link href="static/halaman/assets/css/nucleo-svg.css" rel="stylesheet" />
+  <!-- Font Awesome Icons -->
+  <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+  <!-- CSS Files -->
+  <link id="pagestyle" href="{% static '/halaman/assets/css/material-kit-pro.css' %}?v=3.0.0" rel="stylesheet" />
+</head>
+
+<body class="blog-posts bg-gray-200">
+  <!-- Navbar Transparent -->
+    {% include 'halaman/navbar.html' %}
+  <!-- End Navbar -->
+  <!-- End Navbar -->
+  <!-- -------- START HEADER 11 w/ carousel ------- -->
+  <header>
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="page-header min-vh-75" style="background-image: url('static/halaman/assets/img/old-trafford.jpg');" loading="lazy">
+            <span class="mask bg-gradient-dark"></span>
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-6 my-auto">
+                  <h4 class="text-white mb-0 fadeIn1 fadeInBottom">Red Devil</h4>
+                  <h1 class="text-white fadeIn2 fadeInBottom">Manchester United</h1>
+                  <p class="lead text-white opacity-8 fadeIn3 fadeInBottom">Klub dengan sejarah luar biasa, penuh kejayaan, dan penggemar setia di seluruh dunia. Setiap pertandingan adalah bagian dari legenda yang terus berlanjut.</p>
                 </div>
               </div>
-              <hr class="horizontal dark my-4">
-              <h3 class="mb-3">
-                <a href="javascript:;" class="text-darker">
-                  5 Ways to Improve your Life.
-                </a>
-              </h3>
-              <p class="mb-3">
-                Create first, edit second. Never do them at the same time.
-              </p>
             </div>
-            <div class="col-lg-4 col-md-6 position-relative mb-sm-0 mb-3">
-              <hr class="vertical dark d-lg-block d-none">
-              <div class="card card-plain">
-                <div class="card-header p-0 mx-lg-3 mt-3 position-relative z-index-1">
-                  <a href="javascript:;" class="d-block">
-                    <img src="{% static 'halaman/assets/img/examples/blog-9-4.jpg' %}" class="img-fluid border-radius-lg" loading="lazy">
-                  </a>
-                </div>
-                <div class="card-body pt-3">
-                  <h4 class="mb-3">
-                    <a href="javascript:;" class="text-darker font-weight-bolder">
-                      How to Build a $24 Billion Dollar Company in Just 2 Years.
-                    </a>
-                  </h4>
-                  <p class="card-description mb-4">
-                    I&#39;ve come to the conclusion that 50% of folks in this world don&#39;t even
-                    spend enough time alone with their thoughts to have their own opinions.
-                    They haven&#39;t done the work to decide what they think. And that isn&#39;t a rewarding way to live.
-                  </p>
-                  <div class="author">
-                    <img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/assets/img/freedom.jpg" alt="..." class="avatar shadow border-radius-lg" loading="lazy">
-                    <div class="name ps-3 my-auto">
-                      <p class="text-sm text-darker font-weight-bold mb-0">L&#39;orea Sirman</p>
-                      <div class="stats">
-                        <p class="text-xs text-secondary mb-0">Redactor</p>
+          </div>
+          <div class="card shadow-lg mt-n5 mx-4 mb-4">
+            <div class="card-body">
+              <div class="container-fluid px-0">
+                <div class="row">
+                  <div class="col-lg-4 col-sm-6 mb-sm-0 mb-4">
+                    <div class="info-horizontal bg-gradient-primary border-radius-xl p-4 d-block d-md-flex ">
+                      <i class="material-icons text-3xl text-white">shuffle</i>
+                      <div class="description ps-0 ps-md-3">
+                        <h5 class="text-white"> Manchester United: Klub Legendaris</h5>
+                        <p class="text-white pe-0 pe-lg-5">Manchester United adalah lebih dari sekadar klub sepak bola. Dengan sejarah panjang, trofi bergengsi, dan jutaan penggemar di seluruh dunia, The Red Devils selalu menjadi pusat perhatian di dunia sepak bola.</p>
+                        <a href="https://id.wikipedia.org/wiki/Manchester_United_F.C." target="_blank" class="text-white icon-move-right">
+                          More about us
+                          <i class="fas fa-arrow-right text-sm ms-1"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6 px-lg-1">
+                    <div class="info-horizontal border-radius-xl p-4 d-block d-md-flex ">
+                      <i class="material-icons text-3xl text-gradient text-primary">redeem</i>
+                      <div class="description ps-0 ps-md-3">
+                        <h5>Manchester United Raih Kemenangan Besar!</h5>
+                        <p>Setan Merah kembali menunjukkan dominasinya di lapangan dengan kemenangan luar biasa dalam laga terbaru mereka. Apakah ini awal dari kejayaan baru?</p>
+                        <a href="https://www.manutd.com/en/news" target="_blank" class="text-danger icon-move-right">
+                          More about us
+                          <i class="fas fa-arrow-right text-sm ms-1"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 mt-lg-0 mt-4">
+                    <div class="info-horizontal border-radius-xl p-4 d-block d-md-flex ">
+                      <i class="material-icons text-3xl text-gradient text-primary">bookmarks</i>
+                      <div class="description ps-0 ps-md-3">
+                        <h5>Bintang Manchester United Bersinar Terang</h5>
+                        <p>Dari para legenda seperti Eric Cantona hingga generasi baru seperti Marcus Rashford, Manchester United selalu memiliki pemain-pemain hebat yang menginspirasi jutaan penggemar.</p>
+                        <a href="javascript:;" class="text-primary icon-move-right"><a href="https://www.manutd.com/en/players-and-staff/first-team" target="_blank" class="text-danger icon-move-right">
+                          More about us
+                          <i class="fas fa-arrow-right text-sm ms-1"></i>
+                        </a>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-lg-3 col-md-6 position-relative mb-sm-0 mb-3">
-              <hr class="vertical dark d-md-block d-none">
-              <div class="card card-plain">
-                <div class="card-header p-0 mx-lg-3 mt-3 position-relative z-index-1">
-                  <a href="javascript:;" class="d-block">
-                    <img src="{% static 'halaman/assets/img/examples/blog-9-1.jpg' %}" class="img-fluid border-radius-lg" loading="lazy">
-                  </a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="page-header min-vh-75" style="background-image: url('static/halaman/assets/img/BlueMu.jpg');" loading="lazy">
+            <span class="mask bg-gradient-dark"></span>
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-6 my-auto">
+                  <h4 class="text-white mb-0 fadeIn1 fadeInBottom">Legenda Kami</h4>
+                  <h1 class="text-white fadeIn2 fadeInBottom">Work with the best</h1>
+                  <p class="lead text-white opacity-8 fadeIn3 fadeInBottom">Cocok jika halaman membahas pemain-pemain ikonik MU seperti Beckham, Ronaldo, Rooney, dll.</p>
                 </div>
-                <div class="card-body pt-3">
-                  <h4 class="mb-3">
-                    <a href="javascript:;" class="text-darker font-weight-bolder">
-                      8 Powerful Mental Models to Help You Win.
-                    </a>
-                  </h4>
-                  <p class="text-sm mb-0">By Andrew Peterson</p>
-                </div>
-              </div>
-              <!-- <div class="card card-plain">
-                <div class="card-header p-0 mx-lg-3 position-relative z-index-1">
-                  <a href="javascript:;" class="d-block">
-                    <img src="{% static 'halaman/assets/img/examples/blog-post-6.jpg' %}" class="img-fluid border-radius-lg" loading="lazy">
-                  </a>
-                </div> -->
-                <!-- <div class="card-body pt-3">
-                  <h4 class="mb-3">
-                    <a href="javascript:;" class="text-darker font-weight-bolder">
-                      High performers are like surfers.
-                    </a>
-                  </h4>
-                  <p class="text-sm">By L&#39;orea Michael</p>
-                </div> -->
               </div>
             </div>
-            <div class="col-lg-2 col-md-6 position-relative mb-sm-0 mb-3">
-              <div class="card card-plain">
-                <div class="card-body pt-3">
-                  <h6 class="font-weight-bolder d-flex align-items-center">
-                    <i class="material-icons me-2">mic</i>Podcasts
-                  </h6>
-                  <p>An interview with Tesla founder.</p>
-                  <span class="text-xs">By Alexa Rossa</span>
-                </div>
-              </div>
-              <hr class="horizontal dark mt-0 mb-2">
-              <div class="card card-plain">
-                <div class="card-body pt-3">
-                  <h6 class="font-weight-bolder d-flex align-items-center">
-                    <i class="material-icons me-2">duo</i>
-                    Interviews
-                  </h6>
-                  <p>Make $500k through small biz or raise it from family.</p>
-                  <span class="text-xs">By Jonathan Silvia</span>
-                </div>
-              </div>
-              <hr class="horizontal dark mt-0 mb-2">
-              <div class="card card-plain">
-                <div class="card-body pt-3">
-                  <h6 class="font-weight-bolder d-flex align-items-center">
-                    <i class="material-icons me-2">podcasts</i>Podcasts
-                  </h6>
-                  <p>Lengthen your time horizon.</p>
-                  <span class="text-xs">By Andrew Joe</span>
+          </div>
+          <div class="card shadow-lg mt-n5 mx-4 mb-4">
+            <div class="card-body">
+              <div class="container-fluid px-0">
+                <div class="row">
+                  <div class="col-lg-4 col-sm-6 mb-sm-0 mb-4">
+                    <div class="info-horizontal border-radius-xl p-4 d-block d-md-flex ">
+                      <i class="material-icons text-3xl text-gradient text-info">shuffle_on</i>
+                      <div class="description ps-0 ps-md-3">
+                        <h5>Netflix's 'BECKHAM' Documentary</h5>
+                        <p>Serial dokumenter BECKHAM di Netflix menyajikan perjalanan inspiratif David Beckham, dari masa kecilnya di London, kejayaan di Manchester United, hingga kehidupannya sebagai ikon global. Kisah yang jujur, emosional, dan penuh semangat tentang kerja keras, ketenaran, dan keluarga.</p>
+                        <a href="https://www.netflix.com/title/81292910" target="_blank" class="text-danger icon-move-right">
+                          Learn more
+                          <i class="fas fa-arrow-right text-sm ms-1"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6 px-lg-1">
+                    <div class="info-horizontal info-horizontal bg-gradient-info border-radius-xl p-4 d-block d-md-flex ">
+                      <i class="material-icons text-3xl text-white">beenhere</i>
+                      <div class="description ps-0 ps-md-3">
+                        <h5 class="text-white">Sir Alex Ferguson: Mastermind di Balik Era Keemasan</h5>
+                        <p class="text-white">Sir Alex bukan hanya pelatih, tapi arsitek kejayaan Manchester United. Di bawah arahannya, MU menjuarai 13 gelar Premier League dan 2 Liga Champions. Kepemimpinannya menjadi standar dalam dunia sepak bola modern.</p>
+                        <a href="https://www.manutd.com/en/news/detail/sir-alex-ferguson-career-highlights-and-achievements" target="_blank" class="text-danger icon-move-right">
+                          Learn more
+                          <i class="fas fa-arrow-right text-sm ms-1"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 mt-lg-0 mt-4">
+                    <div class="info-horizontal border-radius-xl p-4 d-block d-md-flex ">
+                      <i class="material-icons text-3xl text-gradient text-info">ballot</i>
+                      <div class="description ps-0 ps-md-3">
+                        <h5>Garnacho dan Era Baru Setan Merah</h5>
+                        <p>Alejandro Garnacho disebut sebagai harapan baru Manchester United. Gaya mainnya yang eksplosif dan penuh percaya diri memberi warna baru di sayap MU. Apakah ia penerus legenda seperti Giggs dan Ronaldo?</p>
+                        <a href="https://www.manutd.com/en/players-and-staff/detail/alejandro-garnacho" target="_blank" class="text-danger icon-move-right">
+                          Learn more
+                          <i class="fas fa-arrow-right text-sm ms-1"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
-      <!-- END Blogs w/ 3 rows w/ image on left & title, text, author on end-->
+        <div class="carousel-item">
+          <div class="page-header min-vh-75" style="background-image: url('static/halaman/assets/img/lorongg.jpg');" loading="lazy">
+            <span class="mask bg-gradient-dark"></span>
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-6 my-auto">
+                  <h4 class="text-white mb-0 fadeIn1 fadeInBottom">Mental Juara</h4>
+                  <h1 class="text-white fadeIn2 fadeInBottom">Di Manchester United, Kerja Keras Tak Pernah Mengkhianati</h1>
+                  <p class="lead text-white opacity-8 fadeIn3 fadeInBottom">Membela MU Adalah Tekanan dan Kehormatan.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card shadow-lg mt-n5 mx-4 mb-4">
+            <div class="card-body">
+              <div class="container-fluid px-0">
+                <div class="row">
+                  <div class="col-lg-4 col-sm-6 mb-sm-0 mb-4">
+                    <div class="info-horizontal border-radius-xl p-4 d-block d-md-flex ">
+                      <i class="material-icons text-3xl text-gradient text-danger">tune</i>
+                      <div class="description ps-0 ps-md-3">
+                        <h5>Behind the Scenes: MU Training Ground</h5>
+                        <p>Rasakan atmosfer Carrington! Dokumenter eksklusif ini membawamu ke balik layar latihan Manchester United. Lihat bagaimana pemain dilatih secara fisik dan mental untuk menghadapi kerasnya Premier League.</p>
+                        <a href="https://www.manutd.com/en/videos/detail/carrington-training-ground-inside-look" target="_blank" class="text-danger icon-move-right">
+                          More about us
+                          <i class="fas fa-arrow-right text-sm ms-1"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6 px-lg-1">
+                    <div class="info-horizontal border-radius-xl p-4 d-block d-md-flex ">
+                      <i class="material-icons text-3xl text-gradient text-danger">settings_suggest</i>
+                      <div class="description ps-0 ps-md-3">
+                        <h5>MU Youth Academy</h5>
+                        <p>Dari Class of ‘92 hingga Rashford, Manchester United terus melahirkan talenta luar biasa dari akademinya. Pelatihan disiplin dan visi jangka panjang menjadikan ini tempat lahir legenda.</p>
+                        <a href="https://www.manutd.com/en/academy" target="_blank" class="text-danger icon-move-right">
+                          More about us
+                          <i class="fas fa-arrow-right text-sm ms-1"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 mt-lg-0 mt-4">
+                    <div class="info-horizontal bg-gradient-danger border-radius-xl p-4 d-block d-md-flex ">
+                      <i class="material-icons text-3xl text-white">compare</i>
+                      <div class="description ps-0 ps-md-3">
+                        <h5 class="text-white">Derby Manchester: Lebih dari Sekadar Pertandingan</h5>
+                        <p class="text-white">Pertemuan Manchester United dan Manchester City selalu panas. Tapi lebih dari sekadar tiga poin, derby ini adalah soal kebanggaan, sejarah, dan siapa penguasa kota Manchester yang sebenarnya.</p>
+                        <a href="https://www.manutd.com/en/news/detail/history-of-the-manchester-derby" target="_blank" class="text-danger icon-move-right">
+                          More about us
+                          <i class="fas fa-arrow-right text-sm ms-1"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="min-vh-75 position-absolute w-100 top-0">
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon position-absolute bottom-50" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon position-absolute bottom-50" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </a>
+      </div>
+    </div>
+  </header>
+  <!-- -------- END HEADER 11 w/ carousel ------- -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-7">
+        <!-- START Blogs w/ 3 rows w/ image on left & title, text, author on end-->
+        <section class="py-5">
+          <div class="card card-plain card-blog mt-5">
+            <div class="row">
+              <div class="col-lg-4 col-md-4">
+                <div class="card-image position-relative border-radius-lg">
+                  <div class="blur-shadow-image">
+                    <img class="img border-radius-lg" src="{% static '/halaman/assets/img/examples/david11.jpg' %}" alt="architecture" loading="lazy">
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-7 col-md-7 my-sm-auto mt-3 ms-sm-3">
+                <h4>
+                  <a href="javascript:;" class="text-dark">David Beckham: Maestro Sepak Bola dan Ikon Global</a>
+                </h4>
+                <p>
+                  Dengan tendangan bebas yang mematikan dan visi permainan luar biasa, David Beckham bukan hanya legenda Manchester United, tapi juga simbol dedikasi dan kelas di atas lapangan. Dari Old Trafford hingga panggung dunia, namanya tetap dikenang jutaan fans. <a href="javascript:;"> Read More </a>
+                </p>
+                <div class="author">
+                  <img src="{% static '/halaman/assets/img/david1.jpg' %}" alt="team-4" class="avatar avatar-sm shadow me-2 border-radius-lg" loading="lazy">
+                  <p class="my-auto">David Beckham</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card card-plain card-blog mt-5">
+            <div class="row">
+              <div class="col-lg-4 col-md-4">
+                <div class="card-image position-relative border-radius-lg">
+                  <div class="blur-shadow-image">
+                    <img class="img border-radius-lg" src="{% static '/halaman/assets/img/examples/cr7i.jpg' %}" alt="estate" loading="lazy">
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-7 col-md-7 my-sm-auto mt-3 ms-sm-3">
+                <h4>
+                  <a href="javascript:;" class="text-dark">Cristiano Ronaldo: Simbol Kehebatan dan Mental Juara</a>
+                </h4>
+                <p>
+                  Dari nomor 7 yang legendaris hingga selebrasi "Siuuu" yang menggema di seluruh dunia, Cristiano Ronaldo adalah bukti nyata kerja keras, disiplin, dan semangat tak tergoyahkan. Karier gemilangnya di Manchester United menginspirasi generasi pemain dan fans di seluruh dunia. <a href="javascript:;"> Read More </a>
+                </p>
+                <div class="author">
+                  <img src="{% static '/halaman/assets/img/cr7iii.jpg' %}" alt="team-3" class="avatar avatar-sm shadow me-2 border-radius-lg" loading="lazy">
+                  <p class="my-auto">Cristiano Ronaldo</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card card-plain card-blog my-5">
+            <div class="row">
+              <div class="col-lg-4 col-md-4">
+                <div class="card-image position-relative border-radius-lg">
+                  <div class="blur-shadow-image">
+                    <img class="img border-radius-lg" src="{% static '/halaman/assets/img/examples/ron1.jpg' %}" alt="buildings" loading="lazy">
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-7 col-md-7 my-sm-auto mt-3 ms-sm-3">
+                <h4>
+                  <a href="javascript:;" class="text-dark">Wayne Rooney: Sang Pemberani dari Merseyside</a>
+                </h4>
+                <p>
+                  Dengan determinasi tinggi, kekuatan fisik, dan naluri mencetak gol luar biasa, Wayne Rooney menjadi simbol semangat Manchester United di era modern. Dari gol debut ikoniknya hingga voli ke gawang City, Rooney adalah legenda yang bermain dengan hati dan jiwa. <a href="javascript:;"> Read More </a>
+                </p>
+                <div class="author">
+                  <img src="{% static '/halaman/assets/img/ron2.jpg' %}" alt="team-2" class="avatar avatar-sm shadow me-2 border-radius-lg" loading="lazy">
+                  <p class="my-auto">Wayne Rooney</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- END Blogs w/ 3 rows w/ image on left & title, text, author on end-->
+        <div class="card card-blog card-background">
+          <div class="full-background" style="background-image: url('https://images.unsplash.com/photo-1488901512066-cd403111aeb2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2378&q=80')" loading="lazy"></div>
+          <div class="card-body body-left">
+            <div class="content-left text-start">
+              <h2 class="card-title text-white">Sir Alex Ferguson</h2>
+              <p class="card-description">Saya tidak pernah bermain untuk hasil imbang dalam hidup saya. Jika saya ada di pertandingan dan kedudukannya imbang dengan sisa 10 menit, saya selalu berpikir bagaimana cara kami bisa menang. Itulah mentalitas yang saya coba tanamkan pada setiap pemain yang pernah mengenakan seragam Manchester United. Penolakan untuk menyerah — itulah yang mendefinisikan kami.</p>
+              <div class="author">
+                <img src="{% static '/halaman/assets/img/sir.jpg' %} " alt="..." class="avatar mr-2" loading="lazy">
+                <div class="name ms-2">
+                  <span>Sir Alex Ferguson</span>
+                  <div class="stats">
+                    <small>Manager</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <ul class="pagination pagination-primary mt-4 ml-2">
+          <li class="page-item">
+ 
+        </ul>
+      </div>
+      <div class="col-lg-4 ml-auto">
+        <div class="pt-1 pb-5 position-sticky top-1 mt-lg-8 mt-5">
+          <h4>Manchester United</h4>
+          <p>Jika ingin lebih tahu tentang Manchester United langsung aja Subscribe youtubenya.</p>
+          <div class="my-3">
+            <div class="input-group input-group-outline mb-sm-0 mb-2">
+            </div>
+          </div>
+          <a href="https://www.youtube.com/@manutd" target="_blank" class="btn bg-gradient-primary">
+            Subscribe
+          </a>
+ 
+          <h4 class="mt-5">Top Stories</h4>
+          <div class="card card-plain card-blog mt-4">
+            <div class="row">
+              <div class="col-lg-4 col-md-4">
+                <div class="card-image position-relative border-radius-lg">
+                  <div class="blur-shadow-image">
+                    <img class="img border-radius-lg" src="{% static 'halaman/assets/img/salto.jpg' %}" alt="MU Legends" loading="lazy">
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-8 col-md-8 my-sm-auto mt-3">
+                <h5>
+                  <a href="javascript:;" class="text-dark font-weight-normal">Garnacho Jadi Pahlawan Baru Setan Merah?</a>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div class="card card-plain card-blog mt-4">
+            <div class="row">
+              <div class="col-lg-4 col-md-4">
+                <div class="card-image position-relative border-radius-lg">
+                  <div class="blur-shadow-image">
+                    <img class="img border-radius-lg" src="{% static 'halaman/assets/img/lucumu.jpg' %}" alt="MU Legends" loading="lazy">
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-8 col-md-8 my-sm-auto mt-3">
+                <h5>
+                  <a href="javascript:;" class="text-dark font-weight-normal">Momen Lucu Pemain MU Saat Tur Pramusim</a>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div class="card card-plain card-blog mt-4">
+            <div class="row">
+              <div class="col-lg-4 col-md-4">
+                <div class="card-image position-relative border-radius-lg">
+                  <div class="blur-shadow-image">
+                    <img class="img border-radius-lg" src="{% static 'halaman/assets/img/dejong.jpg' %}" alt="MU Legends" loading="lazy">
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-8 col-md-8 my-sm-auto mt-3">
+                <h5>
+                  <a href="javascript:;" class="text-dark font-weight-normal">Rumor: De Jong Segera Mendarat di Old Trafford?</a>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <h4 class="mt-5 mb-4">Hastag</h4>
+          <span class="badge bg-light text-dark">#ManchesterisRed</span>
+          <span class="badge bg-light text-dark">#RedDevil</span>
+          <span class="badge bg-light text-dark">#KingMU</span>
+        </div>
+      </div>
+      <div class="col-12">
+        <!-- START Blogs w/ 3 rows w/ image on left & title, text, author on end-->
+        <section class="py-5">
+          <div class="container">
+            <div class="row">
+              <div class="col-8 mx-auto text-center mb-5">
+                <span class="badge badge-info mb-2">RedDevil</span>
+                <h2>Cara Baru Menikmati Manchester United Hari Ini</h2>
+                <p>
+                  jika kamu tidak bisa nonton langsung di Old Trafford, bukan berarti kamu tidak bisa merasakannya. Kami hadirkan berita, wawancara, dan inspirasi dari klub legendaris ini—langsung ke layar kamu.
+                </p>
+              </div>
+            </div>
+            <div class="row mb-4">
+              <div class="col-lg-3 col-md-6 position-relative mb-sm-0 mb-3">
+                <hr class="vertical dark d-md-block d-none">
+                <h3 class="mb-3">
+                  <a href="javascript:;" class="text-darker">
+                    Strategi MU Musim Ini: Menyerang Total atau Bertahan Elegan?
+                  </a>
+                </h3>
+                <p class="mb-3">
+                  Di bawah arahan Erik ten Hag, Manchester United kembali menampilkan identitas permainan yang kuat. Tapi pertanyaannya: apakah gaya menyerang agresif tetap relevan, atau strategi bertahan elegan yang kini lebih efektif di Premier League? Dengan skuad muda dan pemain senior berpengalaman.
+                </p>
+                <p class="mb-3">
+                  Inilah momen transisi yang bisa menentukan arah klub untuk beberapa musim ke depan.
+                </p>
+                <div class="author">
+                  <img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/assets/img/team-9.jpg" alt="..." class="avatar shadow border-radius-lg" loading="lazy">
+                  <div class="name ps-3 my-auto">
+                    <p class="text-sm text-darker font-weight-bold mb-0">Mathew Glock</p>
+                    <div class="stats">
+                      <p class="text-xs text-secondary mb-0">Author</p>
+                    </div>
+                  </div>
+                </div>
+                <hr class="horizontal dark my-4">
+                <h3 class="mb-3">
+                  <a href="javascript:;" class="text-darker">
+                    3 Cara MU Menginspirasi Dunia Sepak Bola Modern
+                  </a>
+                </h3>
+                <p class="mb-3">
+                  Ada 3 cara MU untuk menginspirasi dunia sepak bola
+                </p>
+              </div>
+              <div class="col-lg-4 col-md-6 position-relative mb-sm-0 mb-3">
+                <hr class="vertical dark d-lg-block d-none">
+                <div class="card card-plain">
+                  <div class="card-header p-0 mx-lg-3 mt-3 position-relative z-index-1">
+                    <a href="javascript:;" class="d-block">
+                      <img src="{% static '/halaman/assets/img/examples/newtraford.jpg' %}" class="img-fluid border-radius-lg" loading="lazy">
+                    </a>
+                  </div>
+                  <div class="card-body pt-3">
+                    <h4 class="mb-3">
+                      <a href="javascript:;" class="text-darker font-weight-bolder">
+                        Membangun Dinasti di Old Trafford: Rahasia Sukses MU
+                      </a>
+                    </h4>
+                    <p class="card-description mb-4">
+                      Dari Sir Alex ke Ten Hag – apa saja yang membentuk warisan klub?
+                    </p>
+                    <div class="author">
+                      <img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/assets/img/freedom.jpg" alt="..." class="avatar shadow border-radius-lg" loading="lazy">
+                      <div class="name ps-3 my-auto">
+                        <p class="text-sm text-darker font-weight-bold mb-0">L&#39;orea Sirman</p>
+                        <div class="stats">
+                          <p class="text-xs text-secondary mb-0">Redactor</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 position-relative mb-sm-0 mb-3">
+                <hr class="vertical dark d-md-block d-none">
+                <div class="card card-plain">
+                  <div class="card-header p-0 mx-lg-3 mt-3 position-relative z-index-1">
+                    <a href="javascript:;" class="d-block">
+                      <img src="{% static '/halaman/assets/img/examples/team.jpg' %}" class="img-fluid border-radius-lg" loading="lazy">
+                    </a>
+                  </div>
+                  <div class="card-body pt-3">
+                    <h4 class="mb-3">
+                      <a href="javascript:;" class="text-darker font-weight-bolder">
+                        8 Pemain MU yang Mengubah Sejarah Klub
+                      </a>
+                    </h4>
+                    <p class="text-sm mb-0">By Andrew Peterson</p>
+                  </div>
+                </div>
+                <div class="card card-plain">
+                  <div class="card-header p-0 mx-lg-3 position-relative z-index-1">
+                    <a href="javascript:;" class="d-block">
+                      <img src="{% static '/halaman/assets/img/examples/reddevil.jpg' %}" class="img-fluid border-radius-lg" loading="lazy">
+                    </a>
+                  </div>
+                  <div class="card-body pt-3">
+                    <h4 class="mb-3">
+                      <a href="javascript:;" class="text-darker font-weight-bolder">
+                        Fans Setan Merah: Lebih dari Sekadar Suporter
+                      </a>
+                    </h4>
+                    <p class="text-sm">By L&#39;orea Michael</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-6 position-relative mb-sm-0 mb-3">
+                <div class="card card-plain">
+                  <div class="card-body pt-3">
+                    <h6 class="font-weight-bolder d-flex align-items-center">
+                      <i class="material-icons me-2">mic</i>Podcasts
+                    </h6>
+                    <p>An interview with Tesla founder.</p>
+                    <span class="text-xs">By Alexa Rossa</span>
+                  </div>
+                </div>
+                <hr class="horizontal dark mt-0 mb-2">
+                <div class="card card-plain">
+                  <div class="card-body pt-3">
+                    <h6 class="font-weight-bolder d-flex align-items-center">
+                      <i class="material-icons me-2">duo</i>
+                      Interviews
+                    </h6>
+                    <p>Make $500k through small biz or raise it from family.</p>
+                    <span class="text-xs">By Jonathan Silvia</span>
+                  </div>
+                </div>
+                <hr class="horizontal dark mt-0 mb-2">
+                <div class="card card-plain">
+                  <div class="card-body pt-3">
+                    <h6 class="font-weight-bolder d-flex align-items-center">
+                      <i class="material-icons me-2">podcasts</i>Podcasts
+                    </h6>
+                    <p>Lengthen your time horizon.</p>
+                    <span class="text-xs">By Andrew Joe</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- END Blogs w/ 3 rows w/ image on left & title, text, author on end-->
+      </div>
     </div>
   </div>
-</div>
-{% endblock content %}
+  <!-- ---- START FOOTER 2 dark w/ bg image 5 cols & subscribe area & social---- -->
+        {% include 'halaman/footer.html' %}
+  <!-- ---- END FOOTER 2 dark w/ bg image 5 cols & subscribe area & social---- -->
+  <!--   Core JS Files   -->
+  <script src="{% static '/halaman/assets/js/core/bootstrap.min.js' %}" type="text/javascript"></script>
+  <script src="{% static '/halaman/assets/js/plugins/perfect-scrollbar.min.js' %}"></script>
+  <!--  Plugin for TypedJS, full documentation here: https://github.com/mattboldt/typed.js/ -->
+  <script src="{% static '/halaman/assets/js/plugins/typedjs.js' %}"></script>
+  <script src="{% static '/halaman/assets/js/plugins/choices.min.js' %}"></script>
+  <script src="{% static '/halaman/assets/js/plugins/flatpickr.min.js' %}"></script>
+  <!--  Plugin for Parallax, full documentation here: https://github.com/wagerfield/parallax  -->
+  <script src="{% static 'halaman/assets/js/plugins/parallax.min.js' %}"></script>
+  <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+  <script src="{% static '/halaman/assets/js/plugins/nouislider.min.js' %}" type="text/javascript"></script>
+  <!--  Plugin for the blob animation -->
+  <script src="{% static '/halaman/assets/js/plugins/anime.min.js' %}" type="text/javascript"></script>
+  <script src="{% static '/halaman/assets/js/core/popper.min.js' %}" type="text/javascript"></script>
+  <!-- Control Center for Material UI Kit: parallax effects, scripts for the example pages etc -->
+  <!--  Google Maps Plugin    -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTTfWur0PDbZWPr7Pmq8K3jiDp0_xUziI"></script>
+  <script src="{% static '/halaman/assets/js/material-kit-pro.min.js' %}?v=3.0.0" type="text/javascript"></script>
+  <script>
+    if (document.getElementById('language-select')) {
+      var element = document.getElementById('language-select');
+      const example = new Choices(element, {
+        searchEnabled: false
+      });
+
+    }
+    if (document.getElementById('currency-select')) {
+      var element = document.getElementById('currency-select');
+      const example = new Choices(element, {
+        searchEnabled: false
+      });
+    }
+  </script>
+</body>
+
+</html>
