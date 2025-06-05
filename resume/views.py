@@ -3,7 +3,7 @@ from django.shortcuts import render
 def home(request):
     template_name = "halaman/index.html"
     context = {
-        'title':'Selamat datang di website saya!',
+        'title':'Jaya Raya Mobil',
         'umur': 20,
     }
     return render(request, template_name, context)
