@@ -1,15 +1,3 @@
-<!--
-=========================================================
-* Material Kit 2 PRO - v3.0.0
-=========================================================
-
-* Product Page:  https://www.creative-tim.com/product/material-kit-pro 
-* Copyright 2021 Creative Tim (https://www.creative-tim.com)
-* Coded by www.creative-tim.com
-
- =========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. -->
 {% load static %}
 <!DOCTYPE html>
 <html lang="en" itemscope itemtype="http://schema.org/WebPage">
@@ -235,95 +223,21 @@
       </div>
     </div>
   </header>
-  <!-- -------- END HEADER 11 w/ carousel ------- -->
   <div class="container">
     <div class="row">
-      <div class="col-lg-7">
-        <!-- START Blogs w/ 3 rows w/ image on left & title, text, author on end-->
-        <section class="py-5">
-          <div class="card card-plain card-blog mt-5">
-            <div class="row">
-              <div class="col-lg-4 col-md-4">
-                <div class="card-image position-relative border-radius-lg">
-                  <div class="blur-shadow-image">
-                    <img class="img border-radius-lg" src="{% static '/halaman/assets/img/examples/david11.jpg' %}" alt="architecture" loading="lazy">
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-7 col-md-7 my-sm-auto mt-3 ms-sm-3">
-                <h4>
-                  <a href="javascript:;" class="text-dark">David Beckham: Maestro Sepak Bola dan Ikon Global</a>
-                </h4>
-                <p>
-                  Dengan tendangan bebas yang mematikan dan visi permainan luar biasa, David Beckham bukan hanya legenda Manchester United, tapi juga simbol dedikasi dan kelas di atas lapangan. Dari Old Trafford hingga panggung dunia, namanya tetap dikenang jutaan fans. <a href="javascript:;"> Read More </a>
-                </p>
-                <div class="author">
-                  <img src="{% static '/halaman/assets/img/david1.jpg' %}" alt="team-4" class="avatar avatar-sm shadow me-2 border-radius-lg" loading="lazy">
-                  <p class="my-auto">David Beckham</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card card-plain card-blog mt-5">
-            <div class="row">
-              <div class="col-lg-4 col-md-4">
-                <div class="card-image position-relative border-radius-lg">
-                  <div class="blur-shadow-image">
-                    <img class="img border-radius-lg" src="{% static '/halaman/assets/img/examples/cr7i.jpg' %}" alt="estate" loading="lazy">
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-7 col-md-7 my-sm-auto mt-3 ms-sm-3">
-                <h4>
-                  <a href="javascript:;" class="text-dark">Cristiano Ronaldo: Simbol Kehebatan dan Mental Juara</a>
-                </h4>
-                <p>
-                  Dari nomor 7 yang legendaris hingga selebrasi "Siuuu" yang menggema di seluruh dunia, Cristiano Ronaldo adalah bukti nyata kerja keras, disiplin, dan semangat tak tergoyahkan. Karier gemilangnya di Manchester United menginspirasi generasi pemain dan fans di seluruh dunia. <a href="javascript:;"> Read More </a>
-                </p>
-                <div class="author">
-                  <img src="{% static '/halaman/assets/img/cr7iii.jpg' %}" alt="team-3" class="avatar avatar-sm shadow me-2 border-radius-lg" loading="lazy">
-                  <p class="my-auto">Cristiano Ronaldo</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card card-plain card-blog my-5">
-            <div class="row">
-              <div class="col-lg-4 col-md-4">
-                <div class="card-image position-relative border-radius-lg">
-                  <div class="blur-shadow-image">
-                    <img class="img border-radius-lg" src="{% static '/halaman/assets/img/examples/ron1.jpg' %}" alt="buildings" loading="lazy">
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-7 col-md-7 my-sm-auto mt-3 ms-sm-3">
-                <h4>
-                  <a href="javascript:;" class="text-dark">Wayne Rooney: Sang Pemberani dari Merseyside</a>
-                </h4>
-                <p>
-                  Dengan determinasi tinggi, kekuatan fisik, dan naluri mencetak gol luar biasa, Wayne Rooney menjadi simbol semangat Manchester United di era modern. Dari gol debut ikoniknya hingga voli ke gawang City, Rooney adalah legenda yang bermain dengan hati dan jiwa. <a href="javascript:;"> Read More </a>
-                </p>
-                <div class="author">
-                  <img src="{% static '/halaman/assets/img/ron2.jpg' %}" alt="team-2" class="avatar avatar-sm shadow me-2 border-radius-lg" loading="lazy">
-                  <p class="my-auto">Wayne Rooney</p>
-                </div>
-              </div>
-            </div>
-          </div>
         </section>
-        <!-- END Blogs w/ 3 rows w/ image on left & title, text, author on end-->
         <div class="card card-blog card-background">
-          <div class="full-background" style="background-image: url('https://images.unsplash.com/photo-1488901512066-cd403111aeb2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2378&q=80')" loading="lazy"></div>
+          <div class="full-background" style="background-image: url('{% static 'halaman/assets/img/leader.jpg' %}')" loading="lazy"></div>
           <div class="card-body body-left">
             <div class="content-left text-start">
-              <h2 class="card-title text-white">Sir Alex Ferguson</h2>
-              <p class="card-description">Saya tidak pernah bermain untuk hasil imbang dalam hidup saya. Jika saya ada di pertandingan dan kedudukannya imbang dengan sisa 10 menit, saya selalu berpikir bagaimana cara kami bisa menang. Itulah mentalitas yang saya coba tanamkan pada setiap pemain yang pernah mengenakan seragam Manchester United. Penolakan untuk menyerah — itulah yang mendefinisikan kami.</p>
+              <h2 class="card-title text-white">Listiono Gunawan</h2>
+              <p class="card-description" style="font-style: italic;">Jaya Raya Mobil bukan sekadar tempat jual beli sparepart. Ini adalah komitmen kami untuk memastikan setiap kendaraan yang Anda gunakan tetap prima, aman, dan tahan lama. Di balik setiap produk yang kami tawarkan, ada dedikasi untuk memberikan yang terbaik bagi pelanggan. Karena kami percaya, pelayanan yang tulus akan membangun kepercayaan yang abadi.</p>
               <div class="author">
-                <img src="{% static '/halaman/assets/img/sir.jpg' %} " alt="..." class="avatar mr-2" loading="lazy">
+                <img src="{% static 'halaman/assets/img/leader-icon.png' %}" alt="..." class="avatar mr-2" loading="lazy" style="width: 32px; height: 32px; object-fit: contain;">
                 <div class="name ms-2">
-                  <span>Sir Alex Ferguson</span>
+                  <span>Jaya Raya Mobil</span>
                   <div class="stats">
-                    <small>Manager</small>
+                    <small>Direktur</small>
                   </div>
                 </div>
               </div>
@@ -332,86 +246,17 @@
         </div>
         <ul class="pagination pagination-primary mt-4 ml-2">
           <li class="page-item">
- 
         </ul>
       </div>
-      <div class="col-lg-4 ml-auto">
-        <div class="pt-1 pb-5 position-sticky top-1 mt-lg-8 mt-5">
-          <h4>Manchester United</h4>
-          <p>Jika ingin lebih tahu tentang Manchester United langsung aja Subscribe youtubenya.</p>
-          <div class="my-3">
-            <div class="input-group input-group-outline mb-sm-0 mb-2">
-            </div>
-          </div>
-          <a href="https://www.youtube.com/@manutd" target="_blank" class="btn bg-gradient-primary">
-            Subscribe
-          </a>
- 
-          <h4 class="mt-5">Top Stories</h4>
-          <div class="card card-plain card-blog mt-4">
-            <div class="row">
-              <div class="col-lg-4 col-md-4">
-                <div class="card-image position-relative border-radius-lg">
-                  <div class="blur-shadow-image">
-                    <img class="img border-radius-lg" src="{% static 'halaman/assets/img/salto.jpg' %}" alt="MU Legends" loading="lazy">
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-8 col-md-8 my-sm-auto mt-3">
-                <h5>
-                  <a href="javascript:;" class="text-dark font-weight-normal">Garnacho Jadi Pahlawan Baru Setan Merah?</a>
-                </h5>
-              </div>
-            </div>
-          </div>
-          <div class="card card-plain card-blog mt-4">
-            <div class="row">
-              <div class="col-lg-4 col-md-4">
-                <div class="card-image position-relative border-radius-lg">
-                  <div class="blur-shadow-image">
-                    <img class="img border-radius-lg" src="{% static 'halaman/assets/img/lucumu.jpg' %}" alt="MU Legends" loading="lazy">
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-8 col-md-8 my-sm-auto mt-3">
-                <h5>
-                  <a href="javascript:;" class="text-dark font-weight-normal">Momen Lucu Pemain MU Saat Tur Pramusim</a>
-                </h5>
-              </div>
-            </div>
-          </div>
-          <div class="card card-plain card-blog mt-4">
-            <div class="row">
-              <div class="col-lg-4 col-md-4">
-                <div class="card-image position-relative border-radius-lg">
-                  <div class="blur-shadow-image">
-                    <img class="img border-radius-lg" src="{% static 'halaman/assets/img/dejong.jpg' %}" alt="MU Legends" loading="lazy">
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-8 col-md-8 my-sm-auto mt-3">
-                <h5>
-                  <a href="javascript:;" class="text-dark font-weight-normal">Rumor: De Jong Segera Mendarat di Old Trafford?</a>
-                </h5>
-              </div>
-            </div>
-          </div>
-          <h4 class="mt-5 mb-4">Hastag</h4>
-          <span class="badge bg-light text-dark">#ManchesterisRed</span>
-          <span class="badge bg-light text-dark">#RedDevil</span>
-          <span class="badge bg-light text-dark">#KingMU</span>
-        </div>
-      </div>
       <div class="col-12">
-        <!-- START Blogs w/ 3 rows w/ image on left & title, text, author on end-->
         <section class="py-5">
           <div class="container">
             <div class="row">
               <div class="col-8 mx-auto text-center mb-5">
-                <span class="badge badge-info mb-2">RedDevil</span>
-                <h2>Cara Baru Menikmati Manchester United Hari Ini</h2>
+                <span class="badge badge-info mb-2">Rekan Kami</span>
+                <h2>Rekan Terpercaya dalam Setiap Perjalanan Anda</h2>
                 <p>
-                  jika kamu tidak bisa nonton langsung di Old Trafford, bukan berarti kamu tidak bisa merasakannya. Kami hadirkan berita, wawancara, dan inspirasi dari klub legendaris ini—langsung ke layar kamu.
+                  Sebagai penyedia sparepart terpercaya di Samarinda, Jaya Raya Mobil menjalin kerja sama strategis dengan berbagai merek otomotif ternama untuk memastikan ketersediaan suku cadang yang asli, berkualitas, dan terjamin keandalannya. Kami bangga menjadi bagian dari jaringan yang mendukung mobilitas pelanggan melalui produk-produk terbaik dari mitra terpercaya kami.
                 </p>
               </div>
             </div>
@@ -420,32 +265,11 @@
                 <hr class="vertical dark d-md-block d-none">
                 <h3 class="mb-3">
                   <a href="javascript:;" class="text-darker">
-                    Strategi MU Musim Ini: Menyerang Total atau Bertahan Elegan?
+                    Honda
                   </a>
                 </h3>
                 <p class="mb-3">
-                  Di bawah arahan Erik ten Hag, Manchester United kembali menampilkan identitas permainan yang kuat. Tapi pertanyaannya: apakah gaya menyerang agresif tetap relevan, atau strategi bertahan elegan yang kini lebih efektif di Premier League? Dengan skuad muda dan pemain senior berpengalaman.
-                </p>
-                <p class="mb-3">
-                  Inilah momen transisi yang bisa menentukan arah klub untuk beberapa musim ke depan.
-                </p>
-                <div class="author">
-                  <img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/assets/img/team-9.jpg" alt="..." class="avatar shadow border-radius-lg" loading="lazy">
-                  <div class="name ps-3 my-auto">
-                    <p class="text-sm text-darker font-weight-bold mb-0">Mathew Glock</p>
-                    <div class="stats">
-                      <p class="text-xs text-secondary mb-0">Author</p>
-                    </div>
-                  </div>
-                </div>
-                <hr class="horizontal dark my-4">
-                <h3 class="mb-3">
-                  <a href="javascript:;" class="text-darker">
-                    3 Cara MU Menginspirasi Dunia Sepak Bola Modern
-                  </a>
-                </h3>
-                <p class="mb-3">
-                  Ada 3 cara MU untuk menginspirasi dunia sepak bola
+                  Sebagai salah satu produsen mobil terbesar di dunia, Honda dikenal dengan inovasinya dalam efisiensi bahan bakar dan kenyamanan berkendara. Bersama Honda, kami menyediakan berbagai suku cadang asli untuk model-model populer seperti Honda Brio, Jazz, CR-V, dan Mobilio—dengan jaminan kualitas dan keawetan.
                 </p>
               </div>
               <div class="col-lg-4 col-md-6 position-relative mb-sm-0 mb-3">
@@ -453,24 +277,20 @@
                 <div class="card card-plain">
                   <div class="card-header p-0 mx-lg-3 mt-3 position-relative z-index-1">
                     <a href="javascript:;" class="d-block">
-                      <img src="{% static '/halaman/assets/img/examples/newtraford.jpg' %}" class="img-fluid border-radius-lg" loading="lazy">
                     </a>
                   </div>
                   <div class="card-body pt-3">
                     <h4 class="mb-3">
-                      <a href="javascript:;" class="text-darker font-weight-bolder">
-                        Membangun Dinasti di Old Trafford: Rahasia Sukses MU
+                      <a href="javascript:;" class="text-darker">
+                        Mitsubishi
                       </a>
                     </h4>
                     <p class="card-description mb-4">
-                      Dari Sir Alex ke Ten Hag – apa saja yang membentuk warisan klub?
+                      Mitsubishi adalah nama besar dalam dunia kendaraan niaga dan penumpang, seperti L300, Pajero, dan Xpander. Jaya Raya Mobil menjalin kerja sama untuk mendistribusikan suku cadang orisinal Mitsubishi yang tangguh, cocok untuk kebutuhan jalanan Kalimantan yang beragam.
                     </p>
                     <div class="author">
-                      <img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/assets/img/freedom.jpg" alt="..." class="avatar shadow border-radius-lg" loading="lazy">
                       <div class="name ps-3 my-auto">
-                        <p class="text-sm text-darker font-weight-bold mb-0">L&#39;orea Sirman</p>
                         <div class="stats">
-                          <p class="text-xs text-secondary mb-0">Redactor</p>
                         </div>
                       </div>
                     </div>
@@ -482,70 +302,23 @@
                 <div class="card card-plain">
                   <div class="card-header p-0 mx-lg-3 mt-3 position-relative z-index-1">
                     <a href="javascript:;" class="d-block">
-                      <img src="{% static '/halaman/assets/img/examples/team.jpg' %}" class="img-fluid border-radius-lg" loading="lazy">
                     </a>
                   </div>
                   <div class="card-body pt-3">
                     <h4 class="mb-3">
                       <a href="javascript:;" class="text-darker font-weight-bolder">
-                        8 Pemain MU yang Mengubah Sejarah Klub
+                        Toyota
                       </a>
                     </h4>
-                    <p class="text-sm mb-0">By Andrew Peterson</p>
+                    <p class="text-sm mb-0">Toyota selalu dikenal dengan ketangguhan dan keiritannya. Melalui kemitraan ini, kami menyediakan sparepart resmi untuk berbagai varian Toyota—mulai dari Avanza hingga Fortuner—yang dapat diandalkan untuk penggunaan jangka panjang.</p>
                   </div>
                 </div>
-                <div class="card card-plain">
-                  <div class="card-header p-0 mx-lg-3 position-relative z-index-1">
-                    <a href="javascript:;" class="d-block">
-                      <img src="{% static '/halaman/assets/img/examples/reddevil.jpg' %}" class="img-fluid border-radius-lg" loading="lazy">
-                    </a>
-                  </div>
-                  <div class="card-body pt-3">
-                    <h4 class="mb-3">
-                      <a href="javascript:;" class="text-darker font-weight-bolder">
-                        Fans Setan Merah: Lebih dari Sekadar Suporter
-                      </a>
-                    </h4>
-                    <p class="text-sm">By L&#39;orea Michael</p>
-                  </div>
                 </div>
               </div>
-              <div class="col-lg-2 col-md-6 position-relative mb-sm-0 mb-3">
-                <div class="card card-plain">
-                  <div class="card-body pt-3">
-                    <h6 class="font-weight-bolder d-flex align-items-center">
-                      <i class="material-icons me-2">mic</i>Podcasts
-                    </h6>
-                    <p>An interview with Tesla founder.</p>
-                    <span class="text-xs">By Alexa Rossa</span>
-                  </div>
-                </div>
-                <hr class="horizontal dark mt-0 mb-2">
-                <div class="card card-plain">
-                  <div class="card-body pt-3">
-                    <h6 class="font-weight-bolder d-flex align-items-center">
-                      <i class="material-icons me-2">duo</i>
-                      Interviews
-                    </h6>
-                    <p>Make $500k through small biz or raise it from family.</p>
-                    <span class="text-xs">By Jonathan Silvia</span>
-                  </div>
-                </div>
-                <hr class="horizontal dark mt-0 mb-2">
-                <div class="card card-plain">
-                  <div class="card-body pt-3">
-                    <h6 class="font-weight-bolder d-flex align-items-center">
-                      <i class="material-icons me-2">podcasts</i>Podcasts
-                    </h6>
-                    <p>Lengthen your time horizon.</p>
-                    <span class="text-xs">By Andrew Joe</span>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
         </section>
-        <!-- END Blogs w/ 3 rows w/ image on left & title, text, author on end-->
       </div>
     </div>
   </div>
@@ -576,7 +349,6 @@
       const example = new Choices(element, {
         searchEnabled: false
       });
-
     }
     if (document.getElementById('currency-select')) {
       var element = document.getElementById('currency-select');
